@@ -1,1 +1,127 @@
-# Báo cáo Tổng quan Repository: AI Note Taker Service\n\n## 1. Giới thiệu và Mục tiêu Dự án\n\nAI Note Taker Service là một microservice Python do Vulcanlabs AI Team phát triển, tập trung vào chuyển đổi audio thành văn bản (ASR), tóm tắt nội dung, tạo quiz/flashcard từ audio, PDF và webpage. Dự án đồng thời đóng vai trò template mẫu cho các microservices nội bộ, hướng tới triển khai nhanh, mở rộng và kiểm thử trong môi trường phát triển AI hiện đại.\n\n### Mục tiêu chính:\n- Tự động hóa chuyển đổi audio thành text, tóm tắt, sinh quiz/flashcard.\n- Hỗ trợ đa nền tảng (Android/iOS/Web).\n- Tích hợp kiểm duyệt nội dung NSFW đa ngôn ngữ.\n- Xử lý bất đồng bộ với Google Cloud Pub/Sub.\n- Đáp ứng tiêu chuẩn production: REST API, Prometheus metrics, Docker hóa, logging, monitoring.\n\n## 2. Kiến trúc & Công nghệ\n\n### Tech Stack:\n- **Ngôn ngữ:** Python (~100%)\n- **Framework:** FastAPI, Uvicorn\n- **AI/ML:** OpenAI GPT-4, Mistral AI (OCR), Whisper v3 (ASR), Fireworks, Groq\n- **Database:** Redis (cache, whitelist, process status)\n- **Message Queue:** Google Cloud Pub/Sub\n- **Container:** Docker\n- **Monitoring:** Prometheus, Loguru\n\n### Kiến trúc tổng thể:\n- REST API với FastAPI, chia nhỏ theo routers cho từng chức năng (ASR, summary, quiz, flashcard, PDF/webpage summary, NSFW whitelist...)\n- Xử lý bất đồng bộ qua Pub/Sub subscriber (audio processing pipeline)\n- Tách biệt rõ business logic (services), orchestration (usecases), model wrappers, và database layer\n- Demo UI với Streamlit phục vụ kiểm thử nhanh\n\n## 3. Cấu trúc Thư mục & Tệp Trọng Yếu\n\n- **main.py:** Entrypoint chính, khởi động server và Pub/Sub subscriber.\n- **source/app.py:** Định nghĩa FastAPI app, đăng ký routers, middleware, load NSFW whitelist.\n- **source/configs/config.yaml:** Cấu hình model (Whisper, GPT-4, Mistral), tham số AI.\n- **source/endpoint/schemas.py:** Pydantic schemas cho request/response, đảm bảo type safety.\n- **source/pubsub_app.py:** Xử lý message từ Pub/Sub, trigger pipeline ASR + summary.\n- **source/usecases/process_handler.py:** Orchestration cho các background task.\n- **source/dbs/redis/nsfw_whitelist_manager.py:** Quản lý whitelist kiểm duyệt nội dung.\n- **requirements.txt:** Định nghĩa dependencies.\n- **deploy/docker/Dockerfile:** Docker hóa service.\n\n## 4. Tính năng Chính & API\n\n### Tính năng:\n- **ASR + Tóm tắt audio:** Chuyển audio thành text, tóm tắt nội dung.\n- **Tóm tắt PDF/webpage:** OCR + LLM tóm tắt tài liệu số.\n- **Sinh quiz/flashcard:** Từ transcript audio hoặc text.\n- **Kiểm duyệt NSFW:** Whitelist đa ngôn ngữ, quản lý qua API/CLI.\n- **Xử lý bất đồng bộ:** Qua Pub/Sub, hỗ trợ scale.\n- **Monitoring:** Prometheus metrics, health check endpoint.\n\n### API Endpoints (tiêu biểu):\n| Method | Path | Mục đích |\n|--------|------|----------|\n| POST | /api/v1/internal/audio-to-text | ASR + tóm tắt audio |\n| POST | /api/v1/internal/summary-generation | Tóm tắt transcript |\n| POST | /api/v1/internal/quizzes-generation | Sinh quiz |\n| POST | /api/v1/internal/flash-cards-generation | Sinh flashcard |\n| POST | /api/v1/internal/pdf-summary-generation | Tóm tắt PDF |\n| POST | /api/v1/internal/webpage-summary-generation | Tóm tắt webpage |\n| GET  | /api/v1/internal/process/{id}/status | Kiểm tra trạng thái task |\n| GET  | /api/status | Health check |\n| GET  | /api/metrics | Prometheus metrics |\n\n### CLI Tools:\n- Quản lý NSFW whitelist (load, add, stats...)\n- Generate Swagger docs\n\n## 5. AI Models & Data Flow\n\n- **ASR:** Whisper v3 (Fireworks, Groq)\n- **Summarization:** GPT-4 (OpenAI)\n- **Quiz/Flashcard:** GPT-4o\n- **OCR:** Mistral\n- **VAD:** pyannote/segmentation-3.0\n- **Translation:** GPT-4.1-mini\n\n#### Model selection linh hoạt theo platform (Android/iOS), fallback thông minh.\n\n#### Redis lưu trạng thái process, NSFW whitelist dạng set theo ngôn ngữ.\n\n## 6. Vận hành & Quickstart\n\n- Yêu cầu: Python 3.11+, ffmpeg, Redis, Google Cloud Pub/Sub credentials (nếu dùng async)\n- Cấu hình qua .env (tokens, Redis, backend URLs...)\n- Chạy local: `python3 main.py` (API tại http://0.0.0.0:8080)\n- Docker hóa: build/run image với Dockerfile\n- Demo UI: Streamlit (cảnh báo chi phí API thật)\n\n## 7. Bảo mật, Giấy phép & Rủi ro\n\n- **License:** Proprietary (Vulcanlabs)\n- **Security Risks:**\n  - Hardcoded secrets (cần kiểm soát .env)\n  - SSRF risk với các endpoint nhận public URL (audio, PDF, webpage)\n  - Redis không password = exposed\n  - Log level DEBUG có thể leak secrets\n- **Dependency Risks:**\n  - Không có lock file → khó kiểm soát reproducibility\n  - Một số package version cũ có thể có CVE\n\n## 8. Hạn chế, Nợ kỹ thuật & Đề xuất cải tiến\n\n- **Thiếu test coverage:** Chưa có unit/integration tests\n- **Chưa có CI/CD:** Không phát hiện workflow tự động hóa build/lint/test\n- **Chưa có rate limiting:** API dễ bị abuse\n- **Error handling:** Chưa rõ retry logic với external API\n- **Magic numbers, typo, duplicate imports:** Cần refactor\n- **Swagger UI:** Chưa enable /docs, chỉ có static JSON\n- **Monitoring:** Có Prometheus, loguru nhưng health check chưa kiểm tra Redis/PubSub\n\n### Đề xuất cải tiến:\n- Thêm test suite (pytest), CI/CD (GitHub Actions)\n- Enable Swagger UI, bổ sung OpenAPI docs\n- Implement rate limiting, validate URL input\n- Tách secrets khỏi code, thêm .env.example\n- Fix typo, magic numbers, duplicate code\n- Bổ sung health check cho các service phụ trợ\n\n## 9. Kết luận & Giá trị học thuật\n\nAI Note Taker Service là ví dụ điển hình về microservice AI production-grade, tích hợp đa mô hình AI, xử lý bất đồng bộ, kiểm duyệt nội dung, monitoring và containerization. Dự án phù hợp cho nghiên cứu, học tập về kiến trúc microservice, orchestration AI pipeline, bảo mật API, và CI/CD hiện đại. Tuy nhiên, để đạt chuẩn production thực sự, cần bổ sung test coverage, CI/CD, rate limiting và kiểm soát bảo mật nghiêm ngặt hơn.\n\n### Từ khóa: ASR, OCR, LLM, microservice, FastAPI, Prometheus, Pub/Sub, NSFW, containerization, AI pipeline.\n
+
+# Báo cáo Tổng quan Repository: AI Note Taker Service
+
+## 1. Giới thiệu và Mục tiêu Dự án
+
+AI Note Taker Service là một microservice Python do Vulcanlabs AI Team phát triển, tập trung vào chuyển đổi audio thành văn bản (ASR), tóm tắt nội dung, tạo quiz/flashcard từ audio, PDF và webpage. Dự án đồng thời đóng vai trò template mẫu cho các microservices nội bộ, hướng tới triển khai nhanh, mở rộng và kiểm thử trong môi trường phát triển AI hiện đại.
+
+### Mục tiêu chính:
+- Tự động hóa chuyển đổi audio thành text, tóm tắt, sinh quiz/flashcard.
+- Hỗ trợ đa nền tảng (Android/iOS/Web).
+- Tích hợp kiểm duyệt nội dung NSFW đa ngôn ngữ.
+- Xử lý bất đồng bộ với Google Cloud Pub/Sub.
+- Đáp ứng tiêu chuẩn production: REST API, Prometheus metrics, Docker hóa, logging, monitoring.
+
+## 2. Kiến trúc & Công nghệ
+
+### Tech Stack:
+- **Ngôn ngữ:** Python (~100%)
+- **Framework:** FastAPI, Uvicorn
+- **AI/ML:** OpenAI GPT-4, Mistral AI (OCR), Whisper v3 (ASR), Fireworks, Groq
+- **Database:** Redis (cache, whitelist, process status)
+- **Message Queue:** Google Cloud Pub/Sub
+- **Container:** Docker
+- **Monitoring:** Prometheus, Loguru
+
+### Kiến trúc tổng thể:
+- REST API với FastAPI, chia nhỏ theo routers cho từng chức năng (ASR, summary, quiz, flashcard, PDF/webpage summary, NSFW whitelist...)
+- Xử lý bất đồng bộ qua Pub/Sub subscriber (audio processing pipeline)
+- Tách biệt rõ business logic (services), orchestration (usecases), model wrappers, và database layer
+- Demo UI với Streamlit phục vụ kiểm thử nhanh
+
+## 3. Cấu trúc Thư mục & Tệp Trọng Yếu
+
+- **main.py:** Entrypoint chính, khởi động server và Pub/Sub subscriber.
+- **source/app.py:** Định nghĩa FastAPI app, đăng ký routers, middleware, load NSFW whitelist.
+- **source/configs/config.yaml:** Cấu hình model (Whisper, GPT-4, Mistral), tham số AI.
+- **source/endpoint/schemas.py:** Pydantic schemas cho request/response, đảm bảo type safety.
+- **source/pubsub_app.py:** Xử lý message từ Pub/Sub, trigger pipeline ASR + summary.
+- **source/usecases/process_handler.py:** Orchestration cho các background task.
+- **source/dbs/redis/nsfw_whitelist_manager.py:** Quản lý whitelist kiểm duyệt nội dung.
+- **requirements.txt:** Định nghĩa dependencies.
+- **deploy/docker/Dockerfile:** Docker hóa service.
+
+## 4. Tính năng Chính & API
+
+### Tính năng:
+- **ASR + Tóm tắt audio:** Chuyển audio thành text, tóm tắt nội dung.
+- **Tóm tắt PDF/webpage:** OCR + LLM tóm tắt tài liệu số.
+- **Sinh quiz/flashcard:** Từ transcript audio hoặc text.
+- **Kiểm duyệt NSFW:** Whitelist đa ngôn ngữ, quản lý qua API/CLI.
+- **Xử lý bất đồng bộ:** Qua Pub/Sub, hỗ trợ scale.
+- **Monitoring:** Prometheus metrics, health check endpoint.
+
+### API Endpoints (tiêu biểu):
+| Method | Path | Mục đích |
+|--------|------|----------|
+| POST | /api/v1/internal/audio-to-text | ASR + tóm tắt audio |
+| POST | /api/v1/internal/summary-generation | Tóm tắt transcript |
+| POST | /api/v1/internal/quizzes-generation | Sinh quiz |
+| POST | /api/v1/internal/flash-cards-generation | Sinh flashcard |
+| POST | /api/v1/internal/pdf-summary-generation | Tóm tắt PDF |
+| POST | /api/v1/internal/webpage-summary-generation | Tóm tắt webpage |
+| GET  | /api/v1/internal/process/{id}/status | Kiểm tra trạng thái task |
+| GET  | /api/status | Health check |
+| GET  | /api/metrics | Prometheus metrics |
+
+### CLI Tools:
+- Quản lý NSFW whitelist (load, add, stats...)
+- Generate Swagger docs
+
+## 5. AI Models & Data Flow
+
+- **ASR:** Whisper v3 (Fireworks, Groq)
+- **Summarization:** GPT-4 (OpenAI)
+- **Quiz/Flashcard:** GPT-4o
+- **OCR:** Mistral
+- **VAD:** pyannote/segmentation-3.0
+- **Translation:** GPT-4.1-mini
+
+#### Model selection linh hoạt theo platform (Android/iOS), fallback thông minh.
+
+#### Redis lưu trạng thái process, NSFW whitelist dạng set theo ngôn ngữ.
+
+## 6. Vận hành & Quickstart
+
+- Yêu cầu: Python 3.11+, ffmpeg, Redis, Google Cloud Pub/Sub credentials (nếu dùng async)
+- Cấu hình qua .env (tokens, Redis, backend URLs...)
+- Chạy local: `python3 main.py` (API tại http://0.0.0.0:8080)
+- Docker hóa: build/run image với Dockerfile
+- Demo UI: Streamlit (cảnh báo chi phí API thật)
+
+## 7. Bảo mật, Giấy phép & Rủi ro
+
+- **License:** Proprietary (Vulcanlabs)
+- **Security Risks:**
+  - Hardcoded secrets (cần kiểm soát .env)
+  - SSRF risk với các endpoint nhận public URL (audio, PDF, webpage)
+  - Redis không password = exposed
+  - Log level DEBUG có thể leak secrets
+- **Dependency Risks:**
+  - Không có lock file → khó kiểm soát reproducibility
+  - Một số package version cũ có thể có CVE
+
+## 8. Hạn chế, Nợ kỹ thuật & Đề xuất cải tiến
+
+- **Thiếu test coverage:** Chưa có unit/integration tests
+- **Chưa có CI/CD:** Không phát hiện workflow tự động hóa build/lint/test
+- **Chưa có rate limiting:** API dễ bị abuse
+- **Error handling:** Chưa rõ retry logic với external API
+- **Magic numbers, typo, duplicate imports:** Cần refactor
+- **Swagger UI:** Chưa enable /docs, chỉ có static JSON
+- **Monitoring:** Có Prometheus, loguru nhưng health check chưa kiểm tra Redis/PubSub
+
+### Đề xuất cải tiến:
+- Thêm test suite (pytest), CI/CD (GitHub Actions)
+- Enable Swagger UI, bổ sung OpenAPI docs
+- Implement rate limiting, validate URL input
+- Tách secrets khỏi code, thêm .env.example
+- Fix typo, magic numbers, duplicate code
+- Bổ sung health check cho các service phụ trợ
+
+## 9. Kết luận & Giá trị học thuật
+
+AI Note Taker Service là ví dụ điển hình về microservice AI production-grade, tích hợp đa mô hình AI, xử lý bất đồng bộ, kiểm duyệt nội dung, monitoring và containerization. Dự án phù hợp cho nghiên cứu, học tập về kiến trúc microservice, orchestration AI pipeline, bảo mật API, và CI/CD hiện đại. Tuy nhiên, để đạt chuẩn production thực sự, cần bổ sung test coverage, CI/CD, rate limiting và kiểm soát bảo mật nghiêm ngặt hơn.
+
+### Từ khóa: ASR, OCR, LLM, microservice, FastAPI, Prometheus, Pub/Sub, NSFW, containerization, AI pipeline.
+
