@@ -1,91 +1,316 @@
+Tôi sẽ phân tích hệ thống này để tạo bản thảo chi tiết. Để làm điều này, tôi cần đọc các file quan trọng trong project.
 
-## 🗺️ Overview
-The Vietnam War (1 November 1955 – 30 April 1975) was a major conflict in Southeast Asia, primarily fought in Vietnam, Laos, and Cambodia. It pitted North Vietnam and its communist allies (the Soviet Union, China, and the Viet Cong) against South Vietnam, supported by the United States and other anti-communist nations. The war was a central theater of the Cold War, marked by ideological, political, and military struggles, and resulted in the reunification of Vietnam under communist control.
+[12 tools called]
 
-## 🏛️ Background and Origins
-### 1. French Colonialism and Nationalist Movements
-- Vietnam was part of French Indochina from the 1880s, facing growing nationalist and communist resistance.
-- The Indochinese Communist Party (ICP), founded by Ho Chi Minh in 1930, sought to overthrow French rule and establish a communist state.
+Dựa trên việc phân tích codebase, tôi sẽ tạo **Bản Thảo Kiến Trúc Hệ Thống GrandEco**:
 
-### 2. Japanese Occupation and World War II
-- Japan occupied Indochina during WWII, allowing the Viet Minh (led by Ho Chi Minh) to gain strength with Allied support.
-- After Japan's surrender, the Viet Minh declared independence, but French and British forces reasserted control in the south.
+---
 
-### 3. First Indochina War and Geneva Accords
-- The Viet Minh defeated the French at Dien Bien Phu in 1954, leading to the Geneva Accords.
-- Vietnam was temporarily divided at the 17th parallel, with elections planned (but never held) for reunification.
+# 📋 GrandEco System Architecture - Bản Thảo Chi Tiết
 
-## ⚔️ Escalation and Major Phases
-### 1. Early South Vietnam and Diệm Era (1954–63)
-- Ngô Đình Diệm, backed by the U.S., became president of South Vietnam, suppressing opposition and launching anti-communist campaigns.
-- Land reforms and political repression fueled resentment and insurgency, leading to the formation of the Viet Cong (VC).
+## 🎯 Tổng Quan Hệ Thống
 
-### 2. U.S. Involvement and Escalation (1963–69)
-- After Diệm's assassination in 1963, South Vietnam entered political instability.
-- The Gulf of Tonkin incident (1964) led to direct U.S. military intervention, including massive troop deployments and bombing campaigns (Operation Rolling Thunder).
-- The war expanded into Laos and Cambodia, with the U.S. supporting allied governments and conducting covert operations.
+**GrandEco** là một **Marketing AI Operating System** cho Apple Search Ads, gồm các module chính:
 
-### 3. Tet Offensive and Aftermath (1968)
-- The Tet Offensive (January 1968) was a large-scale attack by North Vietnamese and VC forces on over 100 cities.
-- Although a military setback for the communists, it shocked U.S. public opinion and eroded support for the war.
-- Leadership changes followed, with General Westmoreland replaced and President Johnson declining to seek re-election.
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                          GrandEco Platform                              │
+├─────────────────┬─────────────────┬─────────────────┬───────────────────┤
+│   Kursor Ads    │   GrandStream   │     ActPort     │    ChatSmile      │
+│  (ASA Command)  │ (Signals+Stories)│ (Task Execution)│  (AI Assistant)   │
+└─────────────────┴─────────────────┴─────────────────┴───────────────────┘
+```
 
-### 4. Vietnamization and U.S. Withdrawal (1969–73)
-- President Nixon initiated "Vietnamization," shifting combat roles to the ARVN and gradually withdrawing U.S. troops.
-- Peace negotiations in Paris led to the 1973 Paris Peace Accords, ending direct U.S. involvement but not the conflict.
-- The war continued between North and South Vietnam, with the U.S. providing limited support.
+---
 
-### 5. Final Campaigns and Fall of Saigon (1973–75)
-- North Vietnam launched major offensives, culminating in the fall of Saigon on 30 April 1975.
-- Vietnam was reunified under communist rule in 1976.
+## 📥 INPUT - Nguồn Dữ Liệu
 
-## 📊 Casualties and Human Impact
-### 1. Military and Civilian Deaths
-| Country/Group         | Military Dead | Civilian Dead         | Wounded      |
-|---------------------- |-------------:|----------------------:|-------------:|
-| South Vietnam         | 313,000      | 195,000–430,000       | 1,170,000    |
-| United States         | 58,281       | —                     | 303,644      |
-| North Vietnam/VC      | 333,620–392,364 | 405,000–2,000,000   | ≈1,340,000+  |
-| Cambodia (Civil War)  | —            | 275,000–310,000       | —            |
-| Laos (Civil War)      | 15,000       | 20,000–62,000         | —            |
-| South Korea           | 5,099        | —                     | 10,962       |
-| Australia             | 521          | —                     | 3,129        |
-| Thailand              | 351          | —                     | —            |
-| New Zealand           | 37           | —                     | —            |
-| Philippines           | 9            | —                     | 64           |
-| Non-Indochinese total | 65,494       | —                     | —            |
-| **Total**             | 1,326,494–3,447,494 | 966,000–3,010,000 | ≈1,340,000+  |
+### 1. **Apple Search Ads (ASA) API**
+- **Endpoint Base**: `https://api.searchads.apple.com/api/v5`
+- **Authentication**: OAuth2 / JWT (ES256)
+- **Backend File**: `backend/asa_data.py`
 
-### 2. Refugees and Aftermath
-- The war triggered the Indochina refugee crisis, with millions fleeing Vietnam, Laos, and Cambodia; about 250,000 perished at sea.
+**Dữ liệu lấy được:**
+| Entity | Fields |
+|--------|--------|
+| **Campaigns** | id, name, status, dailyBudget, countriesOrRegions |
+| **Ad Groups** | id, campaignId, name, status, defaultBidAmount |
+| **Keywords** | id, adGroupId, text, matchType, status, bidAmount |
+| **Search Terms** | searchTermText, matchType, impressions, taps, installs, spend |
+| **Reports** | impressions, taps, installs, spend, avgCPI, ttr, conversionRate, returnOnAdSpend |
 
-### 3. Environmental and Social Effects
-- 20% of South Vietnam's jungle was sprayed with toxic herbicides, causing long-term health and ecological damage.
-- The war left deep social divisions, trauma, and economic disruption in Vietnam and the U.S.
+### 2. **AppsFlyer API** (Single Source of Truth)
+- **Backend File**: `backend/appsflyer_data.py`
 
-## 🌏 International and Domestic Significance
-### 1. Cold War Context and Proxy War
-- The Vietnam War was a proxy conflict between the U.S. (and allies) and the Soviet Union/China, reflecting global Cold War tensions.
+**Dữ liệu lấy được:**
+| Type | Fields |
+|------|--------|
+| **Installs** | install_time, media_source, campaign, country, device_type, revenue, cost |
+| **Events** | event_time, event_name, media_source, campaign, revenue |
+| **Attribution** | media_source, campaign, installs, impressions, clicks, cost, revenue, cpi, roas |
+| **Cohorts** | cohort_day, retained_users, retention_rate, revenue, ltv |
+| **Cost Data** | date, media_source, campaign, impressions, clicks, cost |
 
-### 2. U.S. Domestic Impact
-            - The war sparked a powerful anti-war movement, led to the "Vietnam syndrome" (reluctance for future military interventions), and contributed to political crises such as Watergate.
+### 3. **RSS Feeds** (Market Stories)
+- **Default Sources**:
+  - TechCrunch Mobile
+  - Mobile Dev Memo  
+  - 9to5Mac
+  - MacRumors
+  - Search Engine Land
+  - AdExchanger
+  - Sensor Tower Blog
 
-### 3. Regional Consequences
-- The war's end led to communist victories in Cambodia and Laos, the Cambodian genocide, and the Sino-Vietnamese War (1979).
+---
 
-## 🕰️ Timeline of Key Events
-| Year      | Event                                                      |
-|-----------|------------------------------------------------------------|
-| 1954      | French defeat at Dien Bien Phu; Geneva Accords             |
-| 1955      | Start of the Vietnam War; Diệm becomes South Vietnam leader|
-| 1963      | Diệm assassinated; U.S. increases involvement              |
-| 1964      | Gulf of Tonkin incident; U.S. escalates war                |
-| 1965      | U.S. ground troops land; Operation Rolling Thunder begins  |
-| 1968      | Tet Offensive; shift in U.S. public opinion                |
-| 1969      | Nixon's Vietnamization policy; troop withdrawals begin     |
-| 1973      | Paris Peace Accords; U.S. combat troops withdraw           |
-| 1975      | Fall of Saigon; reunification of Vietnam                   |
+## ⚙️ PROCESS - Xử Lý Dữ Liệu
 
-## 📝 Conclusion
-The Vietnam War was a complex conflict rooted in colonial history, nationalist movements, and Cold War rivalries. It escalated from a civil war into a major international confrontation, resulting in immense human, social, and environmental costs. The war's outcome reshaped Southeast Asia, influenced global politics, and left a lasting legacy on U.S. society and foreign policy. Its significance endures in debates over intervention, national sovereignty, and the human consequences of war.
+### Module Architecture
 
+```
+┌────────────────────────────────────────────────────────────────────┐
+│                        Backend (FastAPI)                            │
+│  ┌──────────────┐  ┌───────────────┐  ┌────────────────────────┐  │
+│  │  ASA Router   │  │ AppsFlyer     │  │   Signal Engine        │  │
+│  │  (asa_data)   │  │ (appsflyer)   │  │   (signal_engine.py)   │  │
+│  └──────┬───────┘  └───────┬───────┘  └───────────┬────────────┘  │
+│         │                  │                      │               │
+│         ▼                  ▼                      ▼               │
+│  ┌───────────────────────────────────────────────────────────────┐│
+│  │                    Database (SQLite)                          ││
+│  │  metrics_daily | signals | tasks | stories | automation_rules ││
+│  └───────────────────────────────────────────────────────────────┘│
+│         │                  │                      │               │
+│         ▼                  ▼                      ▼               │
+│  ┌──────────────┐  ┌───────────────┐  ┌────────────────────────┐ │
+│  │   Tasks API   │  │  Stories API  │  │      Chat API          │ │
+│  │  (tasks.py)   │  │ (stories.py)  │  │     (chat.py)          │ │
+│  └──────────────┘  └───────────────┘  └────────────────────────┘ │
+└────────────────────────────────────────────────────────────────────┘
+```
+
+### Signal Detection Engine (`signal_engine.py`)
+
+**Loại Signal phát hiện:**
+
+| Signal Type | Threshold | Severity | Description |
+|-------------|-----------|----------|-------------|
+| `cpi_spike` | +20% | warning/critical | CPI tăng đột biến |
+| `cpi_drop` | -20% | info | CPI giảm (tốt) |
+| `roas_anomaly` | -20% | warning | ROAS giảm |
+| `install_drop` | -25% | critical | Lượng install giảm |
+| `budget_pacing` | >100% | warning | Chi tiêu vượt budget |
+| `keyword_underperform` | >2x avg | warning | Keyword CPI cao |
+| `creative_fatigue` | -25% CTR | warning | CTR creative giảm |
+| `creative_winner` | >1.5x avg | info | Creative hiệu quả |
+
+**Phương thức so sánh:**
+- **Day-over-Day**: So với ngày hôm trước
+- **7-Day Average**: So với trung bình 7 ngày
+
+---
+
+## 🗄️ DATABASE - SQLite Schema
+
+**File**: `backend/grandstream.db`
+
+### Tables Structure
+
+```sql
+-- Metrics hàng ngày
+metrics_daily (
+    id, date, entity_type, entity_id, entity_name,
+    impressions, taps, installs, spend, cpi, ctr,
+    conversion_rate, roas, daily_budget
+)
+
+-- Signals phát hiện được
+signals (
+    id, type, severity, entity_type, entity_id, entity_name,
+    metric, current_value, baseline_value, change_pct,
+    comparison_type, detected_at, status, suggested_action, task_id
+)
+
+-- Tasks queue (ActPort)
+tasks (
+    id, name, description, type,
+    app_id, campaign_id, ad_group_id, keyword_id, country,
+    source, source_detail, changes (JSON),
+    status, priority, external,
+    approved_by, approved_at, rejected_reason,
+    executed_at, error
+)
+
+-- Automation rules
+automation_rules (
+    id, name, description, enabled,
+    scope_type, scope_ids (JSON),
+    conditions (JSON), condition_logic,
+    signal_type, signal_severity,
+    last_triggered_at, trigger_count
+)
+
+-- AI-generated stories
+stories (
+    id, title, summary, full_content,
+    importance, priority, category, tags (JSON),
+    impacts (JSON), source_urls (JSON), source_titles (JSON),
+    source_feeds (JSON)
+)
+
+-- RSS sources
+rss_sources (id, name, url, category, enabled, last_crawled_at)
+
+-- Chat history
+chat_history (id, session_id, role, content, module_context)
+```
+
+---
+
+## 🔌 BACKEND API ENDPOINTS
+
+**Base URL**: `http://localhost:8000`
+
+### Core APIs
+
+| Module | Prefix | Key Endpoints |
+|--------|--------|---------------|
+| **Health** | `/` | `GET /` - Status check |
+| **MindFlow** | - | `POST /think`, `POST /regenerate`, `POST /answer` |
+| **Chat** | `/chat` | `POST /chat` (SSE streaming) |
+| **Tasks** | `/tasks` | CRUD + `/approve`, `/reject`, `/retry`, `/batch/*` |
+| **Rules** | `/rules` | CRUD + `/toggle`, `/evaluate`, `/test` |
+| **Stories** | `/stories` | CRUD + `/crawl`, `/sources` |
+| **Signals** | `/signals` | CRUD + `/acknowledge`, `/dismiss`, `/create-task`, `/detect` |
+| **ASA** | `/asa` | `/status`, `/campaigns`, `/adgroups`, `/keywords`, `/sync`, `/reports/*` |
+| **AppsFlyer** | `/appsflyer` | `/status`, `/installs`, `/events`, `/attribution`, `/cohorts`, `/sync` |
+| **Forecast** | `/forecast` | `/status`, `/metrics/{metric}`, `/summary`, `/batch` |
+
+### Write Operations (ASA)
+
+```
+PUT /asa/campaigns/{id}/budget          - Update budget
+PUT /asa/campaigns/{id}/status          - Pause/Enable campaign
+PUT /asa/campaigns/{id}/adgroups/{id}/keywords/{id}/bid    - Update bid
+PUT /asa/campaigns/{id}/adgroups/{id}/keywords/{id}/status - Pause/Enable keyword
+```
+
+---
+
+## 🖥️ FRONTEND PAGES
+
+### Application Routes (`app/(app)/`)
+
+| Route | Page | Description |
+|-------|------|-------------|
+| `/kursorads` | **Kursor Ads** | ASA Command Center - Performance tables, Search Terms, Cohorts, Signals |
+| `/grandstream` | **GrandStream** | Signal & Story Radar - Timeline, Stories list, Signals table |
+| `/actport` | **ActPort** | Task Queue - Pending approvals, Running tasks, History |
+| `/chatsmile` | **ChatSmile** | AI Assistant - Context-aware chat panel |
+
+### Key Components
+
+```
+components/
+├── kursor-ads/          # Performance tables, Campaign tree, Cohort table
+├── grandstream/         # Signal cards, Signal list
+├── actport/             # Task cards
+├── chat/                # Chat input, Chat message
+├── layout/              # App shell, ChatSmile panel
+└── ui/                  # Buttons, Cards, Dropdowns, etc.
+```
+
+---
+
+## 🔄 DATA FLOW - Luồng Dữ Liệu
+
+```
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                              DATA FLOW                                        │
+│                                                                              │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐   │
+│  │ AppsFlyer   │    │ ASA API     │    │ RSS Feeds   │    │ User Input  │   │
+│  │ Pull API    │    │ v5          │    │             │    │ (Chat/UI)   │   │
+│  └──────┬──────┘    └──────┬──────┘    └──────┬──────┘    └──────┬──────┘   │
+│         │                  │                  │                  │          │
+│         ▼                  ▼                  ▼                  ▼          │
+│  ┌──────────────────────────────────────────────────────────────────────┐   │
+│  │                    Backend Routers (FastAPI)                         │   │
+│  │  appsflyer_data.py | asa_data.py | stories.py | chat.py | tasks.py   │   │
+│  └──────────────────────────────────────────────────────────────────────┘   │
+│         │                  │                  │                  │          │
+│         ▼                  ▼                  ▼                  ▼          │
+│  ┌──────────────────────────────────────────────────────────────────────┐   │
+│  │                          SQLite Database                              │   │
+│  │   metrics_daily | signals | tasks | stories | automation_rules        │   │
+│  └──────────────────────────────────────────────────────────────────────┘   │
+│                              │                                              │
+│         ┌────────────────────┼────────────────────┐                        │
+│         ▼                    ▼                    ▼                        │
+│  ┌─────────────┐    ┌─────────────────┐   ┌─────────────────┐             │
+│  │Signal Engine│    │ OpenAI GPT-4.1  │   │  Prophet Model  │             │
+│  │(Anomalies)  │    │ (Chat/Stories)  │   │  (Forecasting)  │             │
+│  └─────────────┘    └─────────────────┘   └─────────────────┘             │
+│         │                    │                    │                        │
+│         ▼                    ▼                    ▼                        │
+│  ┌──────────────────────────────────────────────────────────────────────┐   │
+│  │                      Frontend (Next.js)                               │   │
+│  │  Kursor Ads | GrandStream | ActPort | ChatSmile                       │   │
+│  └──────────────────────────────────────────────────────────────────────┘   │
+└──────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📊 OUTPUT - Kết Quả
+
+### 1. **Kursor Ads Page** (`/kursorads`)
+- Performance table với groupby: Campaign/AdGroup/Keyword/Country
+- Search Terms với suggested actions (Add Exact/Broad/Negative)
+- Cohort & LTV analysis
+- Inline editing → Create Task
+
+### 2. **GrandStream Page** (`/grandstream`)  
+- Timeline: Stories + Signals unified view
+- Stories grid/list với importance scoring
+- Signals table với severity, status filters
+- Actions: Acknowledge, Dismiss, Create Task
+
+### 3. **ActPort Page** (`/actport`)
+- Task queue với status: Pending, Approved, Running, Completed, Failed
+- Batch approve/reject
+- Task detail: Changes diff, Execution logs
+- Source tracking: kursor_ads, grandstream, chatsmile, manual
+
+### 4. **ChatSmile Panel**
+- Context-aware AI assistant
+- Module contexts: kursor_ads, grandstream, actport
+- Task extraction từ conversation
+- Streaming responses
+
+---
+
+## 🔑 Environment Variables Required
+
+```env
+# OpenAI
+OPENAI_API_KEY=sk-...
+LLM_MODEL=gpt-4.1-2025-04-14
+
+# Apple Search Ads (OAuth or JWT)
+ASA_CLIENT_ID=
+ASA_CLIENT_SECRET=
+ASA_ORG_ID=
+ASA_TEAM_ID=
+ASA_KEY_ID=
+ASA_PRIVATE_KEY=
+
+# AppsFlyer
+AF_APP_ID=
+AF_API_TOKEN=
+AF_PULL_API_TOKEN=
+```
+
+---
+
+Đây là bản thảo tổng quan về hệ thống GrandEco. Bạn cần tôi đi sâu hơn vào phần nào không?
