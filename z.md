@@ -3,9 +3,9 @@
 
 > **Type:** City Council Meeting 
 
-> **Purpose:** To discuss and vote on the first reading of the Health Care Workers Minimum Wage Ordinance. 
+> **Purpose:** To discuss and vote on the first reading of the ordinance establishing a $25 minimum wage for health care workers. 
 
-> 🕒 **Time**:  – 
+> 🕒 **Time**:  - 
 
 ---
 
@@ -14,14 +14,14 @@
 > Summary of the entire meeting for those who didn't attend.
 
 **Overview**
-The meeting focused on the first reading of the Health Care Workers Minimum Wage Ordinance, which proposes a $25 minimum wage for health care workers in Long Beach.
+The City Council discussed the first reading of an ordinance to establish a $25 minimum wage for health care workers in Long Beach. Public comments were heard, and a vote was conducted.
 
 ### 🔹 Key Discussion Points
 
-- City Attorney presented the ordinance for first reading.
-- Public comments were made by community members and health care workers, emphasizing the importance of the ordinance to address understaffing and financial struggles.
-- Council members voted unanimously to approve the first reading of the ordinance.
-- The ordinance will be brought back for a final reading in the next regular City Council meeting.
+- City Attorney presented the ordinance to amend the Long Beach Municipal Code by adding Chapter 5.96.
+- Public commenters expressed support for the ordinance, citing understaffing, inflation, and the need for fair wages.
+- The ordinance was approved in the first reading with a unanimous vote of 9-0.
+- The final reading of the ordinance is scheduled for the next regular City Council meeting.
 
 ---
 
@@ -29,9 +29,7 @@ The meeting focused on the first reading of the Health Care Workers Minimum Wage
 
 > Tasks to be done after the meeting.
 
-| Status | Priority | Task | Assignee | Due Date |
-|--------|----------|------|----------|----------|
-| ⬜ TODO | P1 | Prepare the ordinance for final reading at the next regular City Council meeting. | City Attorney | - |
+_No action items recorded._
 
 ---
 
@@ -42,13 +40,13 @@ The meeting focused on the first reading of the Health Care Workers Minimum Wage
 ### ✔️ Decision 1
 
 **Statement**
-Approve the first reading of the Health Care Workers Minimum Wage Ordinance.
+Approve the first reading of the ordinance establishing a $25 minimum wage for health care workers.
 
 **Scope**: City of Long Beach
 **Owner**: City Council
 
 **Rationale**
-> To address understaffing and financial challenges faced by health care workers.
+> To address understaffing, inflation, and fair compensation for health care workers.
 
 ---
 
@@ -56,7 +54,13 @@ Approve the first reading of the Health Care Workers Minimum Wage Ordinance.
 
 > Pending issues that need follow-up.
 
-_No open issues recorded._
+### ⚠️ Issue 1
+
+**Issue**
+Final reading and approval of the ordinance establishing a $25 minimum wage for health care workers.
+
+- **Owner:** City Council
+- **Review Date / Check-in:** Next regular City Council meeting
 
 ---
 
@@ -66,7 +70,7 @@ _No open issues recorded._
 
 | # | Risk | Impact | Likelihood | Mitigation |
 |---|------|--------|------------|------------|
-| 1 | Potential challenges in implementing the $25 minimum wage for health care workers. | medium | medium | Further discussions and planning during the final reading. |
+| 1 | Chronic understaffing in health care facilities may persist if wage increases are not implemented promptly. | high | high | Pass the ordinance to improve wages and attract more health care workers. |
 
 ---
 
@@ -74,11 +78,11 @@ _No open issues recorded._
 
 > Information about the next meeting (if any).
 
-- **Date & Time:** -
+- **Date & Time:** Next regular City Council meeting (date not specified)
 
 **📋 Suggested Agenda**
 
-- Final reading and vote on the Health Care Workers Minimum Wage Ordinance.
+- Final reading and approval of the health care workers minimum wage ordinance
 
 **🧪 Pre-work Required**
 
@@ -92,24 +96,24 @@ _No open issues recorded._
 
 | Name | Role | Team |
 |------|------|------|
-| Speaker 4 | Council Chair |  |
+| Speaker 4 |  |  |
 | Speaker 0 | City Attorney |  |
-| Speaker 5 | Public Comment Facilitator |  |
-| Speaker 1 | Public Commenter |  |
-| Speaker 2 | Public Commenter |  |
+| Speaker 5 |  |  |
+| Speaker 1 | Public commenter |  |
+| Speaker 2 | Public commenter |  |
 
 
 ### 🎭 Roles
 
-- **Organizer:** Council Chair
-- **Decision Makers:** Council Members
+- **Organizer:** -
+- **Decision Makers:** City Council
 
 ---
 
 <div align="center">
 
 📊 **Meeting Snapshot**
-✅ 1 Action Items · ✔️ 1 Decisions · ⚠️ 0 Open Issues · 🛡️ 1 Risks
+✅ 0 Action Items · ✔️ 1 Decisions · ⚠️ 1 Open Issues · 🛡️ 1 Risks
 
 </div>
 
