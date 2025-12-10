@@ -14,14 +14,14 @@
 > Summary of the entire meeting for those who didn't attend.
 
 **Overview**
-The meeting focused on the first reading of an ordinance to establish a $25 minimum wage for health care workers in Long Beach.
+The City Council discussed the first reading of an ordinance to establish a $25 minimum wage for health care workers in Long Beach. Public comments were heard, and the ordinance was approved for a first reading.
 
 ### 🔹 Key Discussion Points
 
-- City Attorney presented the ordinance for first reading.
-- Public comments were made in support of the ordinance, highlighting issues like understaffing, inflation, and the need for better wages.
-- The ordinance was approved in the first reading with a unanimous vote of 9-0.
-- The ordinance will proceed to a final reading in the next regular City Council meeting.
+- The ordinance aims to address chronic understaffing and improve wages for health care workers.
+- Public commenters highlighted the challenges faced by health care workers, including low wages, inflation, and understaffing.
+- The ordinance was read for the first time and approved with a 9-0 vote.
+- The final reading of the ordinance is scheduled for the next regular City Council meeting.
 
 ---
 
@@ -46,7 +46,7 @@ Approve the first reading of the ordinance establishing a $25 minimum wage for h
 **Owner**: City Council
 
 **Rationale**
-> To address understaffing and improve wages for health care workers, as supported by public comments and council discussion.
+> To address chronic understaffing and improve wages for health care workers, as highlighted in public comments.
 
 ---
 
@@ -57,10 +57,10 @@ Approve the first reading of the ordinance establishing a $25 minimum wage for h
 ### ⚠️ Issue 1
 
 **Issue**
-Final reading and approval of the ordinance establishing a $25 minimum wage for health care workers.
+Conduct the final reading and vote on the ordinance establishing a $25 minimum wage for health care workers.
 
 - **Owner:** City Council
-- **Review Date / Check-in:** Next regular City Council meeting (date not specified)
+- **Review Date / Check-in:** Next regular City Council meeting
 
 ---
 
@@ -70,7 +70,7 @@ Final reading and approval of the ordinance establishing a $25 minimum wage for 
 
 | # | Risk | Impact | Likelihood | Mitigation |
 |---|------|--------|------------|------------|
-| 1 | Chronic understaffing in health care facilities, which could impact the implementation of the ordinance. | high | high | No specific mitigation discussed, but the ordinance aims to improve staffing by increasing wages. |
+| 1 | Chronic understaffing in health care facilities may persist if the ordinance does not lead to sufficient wage improvements to retain and attract workers. | high | medium | No specific mitigation discussed. |
 
 ---
 
@@ -82,7 +82,7 @@ Final reading and approval of the ordinance establishing a $25 minimum wage for 
 
 **📋 Suggested Agenda**
 
-- Final reading and approval of the health care workers minimum wage ordinance.
+- Final reading and vote on the health care workers minimum wage ordinance
 
 **🧪 Pre-work Required**
 
@@ -96,16 +96,16 @@ Final reading and approval of the ordinance establishing a $25 minimum wage for 
 
 | Name | Role | Team |
 |------|------|------|
-| Speaker 4 |  |  |
-| Speaker 0 |  |  |
-| Speaker 5 |  |  |
-| Speaker 1 | Public commenter |  |
-| Speaker 2 | Public commenter |  |
+| Speaker 4 | Council Chair* |  |
+| Speaker 0 | City Attorney* |  |
+| Speaker 5 | Public Comment Facilitator* |  |
+| Speaker 1 | Public Commenter |  |
+| Speaker 2 | Public Commenter |  |
 
 
 ### 🎭 Roles
 
-- **Organizer:** -
+- **Organizer:** Council Chair*
 - **Decision Makers:** City Council
 
 ---
@@ -116,3 +116,4 @@ Final reading and approval of the ordinance establishing a $25 minimum wage for 
 ✅ 0 Action Items · ✔️ 1 Decisions · ⚠️ 1 Open Issues · 🛡️ 1 Risks
 
 </div>
+
