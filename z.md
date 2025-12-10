@@ -1,119 +1,119 @@
 
-# 📝 Health Care Workers Minimum Wage Ordinance Discussion
+# 📝 医療従事者最低賃金条例の議論
 
-> **Type:** City Council Meeting 
+> **種類:** 市議会会議
 
-> **Purpose:** To discuss and vote on the first reading of the ordinance establishing a $25 minimum wage for health care workers. 
+> **目的:** 医療従事者の最低賃金を25ドルに設定する条例の初読について議論し、投票すること。
 
-> 🕒 **Time**:  - 
-
----
-
-## 🧩 Discussion Summary
-
-> Summary of the entire meeting for those who didn't attend.
-
-**Overview**
-The City Council discussed the first reading of an ordinance to establish a $25 minimum wage for health care workers in Long Beach. Public comments were heard, and the ordinance was approved for a first reading.
-
-### 🔹 Key Discussion Points
-
-- The ordinance aims to address chronic understaffing and improve wages for health care workers.
-- Public commenters highlighted the challenges faced by health care workers, including low wages, inflation, and understaffing.
-- The ordinance was read for the first time and approved with a 9-0 vote.
-- The final reading of the ordinance is scheduled for the next regular City Council meeting.
+> 🕒 **時間**:  - 
 
 ---
 
-## ✅ Action Items
+## 🧩 議論の概要
 
-> Tasks to be done after the meeting.
+> 出席できなかった方のための会議全体の要約。
 
-_No action items recorded._
+**概要**
+市議会はロングビーチの医療従事者の最低賃金を25ドルに設定する条例の初読について議論しました。一般からの意見も聞かれ、条例は初読として承認されました。
 
----
+### 🔹 主要な議論ポイント
 
-## 🧭 Decisions Made
-
-> Decisions finalized during the meeting.
-
-### ✔️ Decision 1
-
-**Statement**
-Approve the first reading of the ordinance establishing a $25 minimum wage for health care workers.
-
-**Scope**: City of Long Beach
-**Owner**: City Council
-
-**Rationale**
-> To address chronic understaffing and improve wages for health care workers, as highlighted in public comments.
+- この条例は慢性的な人手不足に対処し、医療従事者の賃金を改善することを目的としています。
+- 公聴者は低賃金、インフレ、医療施設の人手不足の課題を強調しました。
+- 条例は9対0の全会一致で承認されました。
+- 条例は次回の定例市議会で最終読会に進みます。
 
 ---
 
-## 🚧 Open Issues
+## ✅ アクションアイテム
 
-> Pending issues that need follow-up.
+> 会議後に行うべきタスク。
 
-### ⚠️ Issue 1
-
-**Issue**
-Conduct the final reading and vote on the ordinance establishing a $25 minimum wage for health care workers.
-
-- **Owner:** City Council
-- **Review Date / Check-in:** Next regular City Council meeting
+_アクションアイテムは記録されていません。_
 
 ---
 
-## 🛡️ Risks
+## 🧭 決定事項
 
-> Risks mentioned during the meeting.
+> 会議中に確定した決定事項。
 
-| # | Risk | Impact | Likelihood | Mitigation |
+### ✔️ 決定1
+
+**声明**
+医療従事者の最低賃金を25ドルに設定する条例の初読を承認する。
+
+**範囲**: ロングビーチ市
+**責任者**: 市議会
+
+**理由**
+> 慢性的な人手不足に対処し、医療従事者の賃金を改善するため、一般からの意見で強調された。
+
+---
+
+## 🚧 未解決の課題
+
+> フォローアップが必要な保留中の課題。
+
+### ⚠️ 課題1
+
+**課題**
+医療従事者の最低賃金を25ドルに設定する条例の最終読会と投票を行う。
+
+- **責任者:** 市議会
+- **レビュー日 / チェックイン:** 次回定例市議会（日時未定）
+
+---
+
+## 🛡️ リスク
+
+> 会議中に言及されたリスク。
+
+| # | リスク | 影響 | 発生可能性 | 緩和策 |
 |---|------|--------|------------|------------|
-| 1 | Chronic understaffing in health care facilities may persist if the ordinance does not lead to sufficient wage improvements to retain and attract workers. | high | medium | No specific mitigation discussed. |
+| 1 | 条例が定着せず、医療施設の慢性的な人手不足が続く可能性がある。 | 高 | 中 | 特定の緩和策は議論されなかった。 |
 
 ---
 
-## 📅 Next Meeting
+## 📅 次回会議
 
-> Information about the next meeting (if any).
+> 次回会議に関する情報（ある場合）。
 
-- **Date & Time:** Next regular City Council meeting (date not specified)
+- **日時:** 次回定例市議会（日時未定）
 
-**📋 Suggested Agenda**
+**📋 提案議題**
 
-- Final reading and vote on the health care workers minimum wage ordinance
+- 医療従事者最低賃金条例の最終読会と投票。
 
-**🧪 Pre-work Required**
+**🧪 事前準備**
 
-- (No pre-work assigned.)
+- （事前準備は割り当てられていません。）
 
 ---
 
-## 👥 Participants
+## 👥 参加者
 
-### ✅ Attendees
+### ✅ 出席者
 
-| Name | Role | Team |
+| 名前 | 役割 | チーム |
 |------|------|------|
-| Speaker 4 | Council Chair* |  |
-| Speaker 0 | City Attorney* |  |
-| Speaker 5 | Public Comment Facilitator* |  |
-| Speaker 1 | Public Commenter |  |
-| Speaker 2 | Public Commenter |  |
+| スピーカー4 | 議長* |  |
+| スピーカー0 | 市弁護士* |  |
+| スピーカー5 | 公聴進行役* |  |
+| スピーカー1 | 公聴者 |  |
+| スピーカー2 | 公聴者 |  |
 
 
-### 🎭 Roles
+### 🎭 役割
 
-- **Organizer:** Council Chair*
-- **Decision Makers:** City Council
+- **主催者:** 議長*
+- **決定者:** 市議会
 
 ---
 
 <div align="center">
 
-📊 **Meeting Snapshot**
-✅ 0 Action Items · ✔️ 1 Decisions · ⚠️ 1 Open Issues · 🛡️ 1 Risks
+📊 **会議スナップショット**
+✅ 0 アクションアイテム · ✔️ 1 決定事項 · ⚠️ 1 未解決課題 · 🛡️ 1 リスク
 
 </div>
 
