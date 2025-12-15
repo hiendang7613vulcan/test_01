@@ -1,9 +1,9 @@
 
-# 📝 Synergy and Cross-Referral Opportunities between Mission Hiring Hall and Upwardly Global
+# 📝 Synergy Discussion between Mission Hiring Hall and Upwardly Global
 
-> **Type:** Partnership Discussion
+> **Type:** Partnership Exploration Meeting
 
-> **Purpose:** To explore collaboration and cross-referral opportunities between Mission Hiring Hall's CAPSA program and Upwardly Global for supporting internationally trained professionals.
+> **Purpose:** To explore collaboration opportunities and cross-referral mechanisms between Mission Hiring Hall's CAPSA program and Upwardly Global.
 
 > 📅 **Date**: 2025-09-22
 
@@ -14,16 +14,15 @@
 > Summary of the entire meeting for those who didn't attend.
 
 **Overview**
-Daniel and Kira Craig discussed potential collaboration between Mission Hiring Hall's CAPSA program and Upwardly Global. The conversation focused on the challenges faced by internationally trained professionals in assimilating into the local job market, the strengths of each program, and the potential for cross-referral and shared resources.
+Daniel and Kira Craig discussed potential collaboration between Mission Hiring Hall's CAPSA program and Upwardly Global. The conversation focused on the similarities in the populations served, the structure of each program, and the potential for cross-referral to maximize participant outcomes. Both parties agreed to follow up with information sharing and further coordination.
 
 ### 🔹 Key Discussion Points
 
-- Reviewed backgrounds of both organizations and their target populations.
-- Discussed the CAPSA program's approach to upskilling and employment narrative building.
-- Kira introduced Upwardly Global's job search support and online mini-workshops.
-- Identified synergy in cross-referral of participants between programs.
-- Discussed capacity constraints in CAPSA and potential for Upwardly Global to support with certifications (OSHA, Salesforce, Microsoft).
-- Agreed to follow up with a demo from Kira and exchange of program overviews.
+- Reviewed CAPSA program structure and target population.
+- Discussed Upwardly Global's job search support and online workshops.
+- Identified strong synergy in serving internationally trained professionals seeking local employment.
+- Explored cross-referral opportunities between programs.
+- Agreed to exchange program information and set up a follow-up call.
 
 ---
 
@@ -33,8 +32,8 @@ Daniel and Kira Craig discussed potential collaboration between Mission Hiring H
 
 | Status | Priority | Task | Assignee | Due Date |
 |--------|----------|------|----------|----------|
-| ⬜ TODO | P1 | Review demo and information to be sent by Kira Craig. | Daniel | - |
 | ⬜ TODO | P1 | Send CAPSA program overview to Kira Craig. | Daniel | - |
+| ⬜ TODO | P1 | Review demo and information from Kira Craig and schedule a follow-up call. | Daniel | - |
 
 ---
 
@@ -52,7 +51,7 @@ Pursue cross-referral opportunities between CAPSA and Upwardly Global programs.
 **Effective Date**: 2025-09-22
 
 **Rationale**
-> Both organizations serve similar populations and can benefit from referring participants to each other's programs to maximize support and resources.
+> Both programs serve similar populations and can benefit from referring participants to each other's services to maximize employment outcomes.
 
 ---
 
@@ -63,10 +62,10 @@ Pursue cross-referral opportunities between CAPSA and Upwardly Global programs.
 ### ⚠️ Issue 1
 
 **Issue**
-Schedule a follow-up call after Daniel reviews Kira's information and demo.
+Finalize the process and criteria for cross-referral between CAPSA and Upwardly Global.
 
-- **Owner:** Daniel
-- **Blocking Factor:** Pending receipt and review of demo and information from Kira Craig.
+- **Owner:** Daniel and Kira Craig
+- **Blocking Factor:** Pending review of shared program materials and further discussion.
 
 ---
 
@@ -76,7 +75,7 @@ Schedule a follow-up call after Daniel reviews Kira's information and demo.
 
 | # | Risk | Impact | Likelihood | Mitigation |
 |---|------|--------|------------|------------|
-| 1 | Limited capacity in CAPSA program (25 slots per semester for over 400 interested parties) may restrict the number of referrals that can be accommodated. | high | high | Explore leveraging Upwardly Global's capacity and resources for overflow participants. |
+| 1 | Limited program capacity at CAPSA (25 slots per semester) may restrict the number of referrals that can be accommodated. | medium | high | No specific mitigation discussed. |
 
 ---
 
@@ -86,14 +85,13 @@ Schedule a follow-up call after Daniel reviews Kira's information and demo.
 
 **📋 Suggested Agenda**
 
-- Discuss feedback on demo and information from Upwardly Global.
-- Plan logistics for cross-referral process.
-- Explore additional certification support options.
+- Discuss detailed cross-referral process and eligibility criteria.
+- Review potential for Upwardly Global to fund participant certifications (OSHA, Salesforce, Microsoft).
 
 **🧪 Pre-work Required**
 
-- Daniel to review demo and information from Kira Craig.
-- Daniel to send CAPSA program overview to Kira Craig.
+- Daniel to review demo and information from Kira.
+- Daniel to send CAPSA program overview to Kira.
 
 ---
 
@@ -120,6 +118,4 @@ Schedule a follow-up call after Daniel reviews Kira's information and demo.
 ✅ 2 Action Items · ✔️ 1 Decisions · ⚠️ 1 Open Issues · 🛡️ 1 Risks
 
 </div>
-
-
 
