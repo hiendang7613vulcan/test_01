@@ -1,9 +1,9 @@
 
-# 📝 Household Coordination and Chores Meeting
+# 📝 Household Meeting: Chores, Bills, and Shared Responsibilities
 
 > **Type:** House Meeting
 
-> **Purpose:** To coordinate household responsibilities, discuss bills, chores, scheduling, and address shared concerns.
+> **Purpose:** To coordinate household chores, review bills and payments, discuss shared responsibilities, and address any ongoing or new issues among housemates.
 
 ---
 
@@ -12,20 +12,18 @@
 > Summary of the entire meeting for those who didn't attend.
 
 **Overview**
-The house meeting focused on coordinating chores, managing bills, clarifying schedules, and addressing shared living concerns. Key topics included the tick system for chores, kitchen cupboard reorganization, bill payments and increases, privacy during appointments, and upcoming shared purchases.
+The housemates met to discuss ongoing household management, including chores, bills, scheduling, and shared responsibilities. Key topics included the tick system for chores, kitchen cupboard reorganization, bill payment updates, privacy during appointments, and upcoming changes to schedules. The group also addressed issues with shared spaces, clarified expectations, and planned for future improvements.
 
 ### 🔹 Key Discussion Points
 
-- Clarified work and school holiday schedules to coordinate household responsibilities.
-- Discussed ongoing issues with car arrangements and follow-up needed for service calls.
-- Reviewed the tick system for chores, including dishwasher duties and fairness.
-- Agreed to reorganize kitchen cupboards for safety and efficiency.
-- Addressed the increase in internet bills and how to split the cost.
-- Discussed privacy needs during appointments and agreed on improved communication.
-- Reviewed outstanding bill payments and agreed on a process for catching up.
-- Discussed upcoming purchases (shelves, dryer) and expectations for shared contributions.
-- Set tentative dates for kitchen cupboard cleaning and reorganization.
-- Reviewed and clarified expectations for general tidiness and rubbish management.
+- Reviewed and clarified the tick system for chores, including dishwasher duties.
+- Discussed scheduling changes due to work and school holidays.
+- Agreed on a plan to reorganize kitchen cupboards and improve storage.
+- Addressed the increase in internet bills and how to split the additional cost.
+- Discussed privacy concerns during appointments and agreed on improved communication and alternative arrangements.
+- Reviewed outstanding payments and agreed on a process for catching up on bills and rent.
+- Planned for general tidying and responsible rubbish disposal.
+- Discussed future purchases for the house (e.g., shelves, dryer) and expectations for shared contributions.
 
 ---
 
@@ -35,11 +33,11 @@ The house meeting focused on coordinating chores, managing bills, clarifying sch
 
 | Status | Priority | Task | Assignee | Due Date |
 |--------|----------|------|----------|----------|
-| ⬜ TODO | P1 | Follow up on car service arrangements and share any new contact numbers or ideas. | Zoe | - |
-| ⬜ TODO | P1 | Send updated rent and payment details to Zoe for review. | Jordan | - |
-| ⬜ TODO | P1 | Calculate and pin the new internet bill split for all members. | Charlotte | - |
-| ⬜ TODO | P2 | Schedule and participate in kitchen cupboard cleaning and reorganization on Friday the 26th at 1pm, or another agreed date. | Jordan | - |
-| ⬜ TODO | P1 | Chase up outstanding bill payments and communicate status to the group. | Zoe | - |
+| 🔄 In Progress | P1 | Follow up on car-related tasks and continue calling for service or removal; share any useful contacts with SPEAKER_00. | SPEAKER_00 | - |
+| ⬜ TODO | P0 | Send updated payment details to SPEAKER_00 for rent and bills, including any changes due to Centrelink or work income. | All housemates* | - |
+| ⬜ TODO | P1 | Work out and pin the new internet bill split at the start of the next billing cycle. | SPEAKER_03 | - |
+| ⬜ TODO | P1 | Organize and participate in kitchen cupboard reorganization on Friday the 26th at 1pm (or as rescheduled). | Jordan, Charlotte, Zoe* | - |
+| ⬜ TODO | P2 | Assist with mounting shelves and TV as needed; coordinate with SPEAKER_00 for timing and contributions. | SPEAKER_02 | - |
 
 ---
 
@@ -50,52 +48,39 @@ The house meeting focused on coordinating chores, managing bills, clarifying sch
 ### ✔️ Decision 1
 
 **Statement**
-Reinstate the tick system for chores, including dishwasher duties, with four ticks required for each person except Charlotte, who has two plus a banked tick.
+Reinstate the tick system for chores, including dishwasher duties, with four ticks per person (except Charlotte, who has two plus one banked tick).
 
-**Scope**: All household members
+**Scope**: All housemates
 **Owner**: Household group*
 
 **Rationale**
-> To ensure fair distribution of chores and accountability.
+> To ensure fair distribution of household chores and clarify expectations.
 
 ---
 
 ### ✔️ Decision 2
 
 **Statement**
-Kitchen cupboards will be reorganized to improve safety and accessibility, with pet food and heavy items moved as discussed.
+Kitchen cupboards will be reorganized, with pet food and heavy items moved for safety and accessibility. Tentatively scheduled for Friday the 26th at 1pm.
 
-**Scope**: Shared kitchen areas
+**Scope**: Shared kitchen spaces
 **Owner**: Household group*
 
 **Rationale**
-> To reduce risk of accidents and improve use of space.
+> To improve safety, accessibility, and organization in the kitchen.
 
 ---
 
 ### ✔️ Decision 3
 
 **Statement**
-Internet bill increase of $3.30 per person accepted, with the new amount to be split among members as agreed.
+Internet bill increase of $3.30 per person will be split among Zach, Gordon, and Charlotte. The group will remain with the current provider for now.
 
-**Scope**: All household members
+**Scope**: Household internet bill
 **Owner**: Household group*
 
 **Rationale**
-> To address the provider's price increase and maintain service.
-
----
-
-### ✔️ Decision 4
-
-**Statement**
-If a member cannot complete their assigned chores, others may assist and receive the corresponding ticks, with consultation.
-
-**Scope**: All household members
-**Owner**: Household group*
-
-**Rationale**
-> To maintain flexibility and ensure chores are completed.
+> To address the increased cost while minimizing disruption and maintaining service quality.
 
 ---
 
@@ -106,10 +91,10 @@ If a member cannot complete their assigned chores, others may assist and receive
 ### ⚠️ Issue 1
 
 **Issue**
-Birdcage relocation or removal remains unresolved; progress to be reviewed at the next house meeting.
+Birdcage storage or removal remains unresolved; progress to be reviewed at the next house meeting.
 
-- **Owner:** Charlotte
-- **Blocking Factor:** Pending action or decision by Charlotte and Jordan
+- **Owner:** Charlotte and Jordan*
+- **Blocking Factor:** Pending action or decision on storage/removal.
 - **Review Date / Check-in:** Next house meeting (date not specified)
 
 ---
@@ -117,21 +102,21 @@ Birdcage relocation or removal remains unresolved; progress to be reviewed at th
 ### ⚠️ Issue 2
 
 **Issue**
-Finalize repayment plans for outstanding shared expenses between Zoe, Jordan, and Charlotte.
+Outstanding payments and catch-up process for bills and rent to be finalized between SPEAKER_00, Jordan, and Charlotte.
 
-- **Owner:** Zoe
-- **Blocking Factor:** Pending agreement and mental readiness
-- **Review Date / Check-in:** After next pay cycle or when Charlotte is ready
+- **Owner:** SPEAKER_00, Jordan, Charlotte*
+- **Blocking Factor:** Pending agreement and updated figures.
+- **Review Date / Check-in:** After next pay cycle or as agreed
 
 ---
 
 ### ⚠️ Issue 3
 
 **Issue**
-Monitor effectiveness of the revised tick system and consider increasing required ticks if needed.
+Review effectiveness of the tick system and consider increasing required ticks at the next house meeting.
 
 - **Owner:** Household group*
-- **Blocking Factor:** Pending observation over the next few weeks
+- **Blocking Factor:** Pending observation of current system's effectiveness.
 - **Review Date / Check-in:** Next house meeting (date not specified)
 
 ---
@@ -139,11 +124,11 @@ Monitor effectiveness of the revised tick system and consider increasing require
 ### ⚠️ Issue 4
 
 **Issue**
-Confirm and implement kitchen cupboard reorganization, ensuring accessibility and safety for all members.
+Clarify and improve communication and arrangements for privacy during appointments, especially when shared spaces are needed.
 
-- **Owner:** Jordan
-- **Blocking Factor:** Scheduling and coordination with other members
-- **Review Date / Check-in:** After planned cleaning date
+- **Owner:** All housemates*
+- **Blocking Factor:** Pending further discussion and trial of new arrangements.
+- **Review Date / Check-in:** Ongoing; revisit as needed
 
 ---
 
@@ -153,9 +138,9 @@ Confirm and implement kitchen cupboard reorganization, ensuring accessibility an
 
 | # | Risk | Impact | Likelihood | Mitigation |
 |---|------|--------|------------|------------|
-| 1 | Potential for misunderstandings or conflict regarding privacy during appointments, leading to stress or disruption. | medium | medium | Improve advance communication and clarify expectations for shared spaces. |
-| 2 | Chores or bill payments may be missed if members are unclear on responsibilities or overwhelmed by other commitments. | medium | medium | Regular check-ins, clear assignment of tasks, and flexibility for support. |
-| 3 | Running air conditioning or heating for medication storage may increase utility costs and cause disputes. | medium | medium | Discuss and agree on reasonable use; explore alternative storage options if needed. |
+| 1 | Potential for ongoing disputes or misunderstandings about shared responsibilities, chores, and bill payments if communication lapses or expectations are unclear. | medium | medium | Regular house meetings, clear documentation of agreements, and reminders in group chat. |
+| 2 | Safety risk from improper storage of heavy kitchen items or pet food, especially if not reorganized as planned. | medium | medium | Reorganize cupboards as agreed and monitor for issues. |
+| 3 | Privacy concerns or emotional distress during sensitive appointments if shared space usage is not coordinated. | medium | medium | Advance notice, alternative arrangements (e.g., use of car), and open communication. |
 
 ---
 
@@ -165,17 +150,18 @@ Confirm and implement kitchen cupboard reorganization, ensuring accessibility an
 
 **📋 Suggested Agenda**
 
-- Review progress on birdcage relocation or removal
-- Evaluate effectiveness of the tick system and discuss possible adjustments
-- Finalize repayment plans for shared expenses
-- Assess kitchen cupboard reorganization and address any issues
-- Discuss any new shared purchases or maintenance needs
+- Review progress on kitchen cupboard reorganization.
+- Revisit tick system effectiveness and possible adjustments.
+- Update on outstanding payments and rent catch-up.
+- Birdcage storage/removal status.
+- General tidying and rubbish disposal review.
+- Follow-up on privacy arrangements during appointments.
 
 **🧪 Pre-work Required**
 
-- Update and share payment details with Zoe
-- Attempt kitchen cupboard cleaning before the scheduled group session
-- Monitor and record completion of chores using the tick system
+- Observe and record tick completion for chores.
+- Prepare updated payment details for rent and bills.
+- Assess kitchen storage needs and availability for reorganization.
 
 ---
 
@@ -185,15 +171,17 @@ Confirm and implement kitchen cupboard reorganization, ensuring accessibility an
 
 | Name | Role | Team |
 |------|------|------|
-| Zoe | - | - |
-| Charlotte | - | - |
-| Jordan | - | - |
-| Zach | - | - |
+| SPEAKER_00 | - | - |
+| SPEAKER_01 | - | - |
+| SPEAKER_02 | - | - |
+| SPEAKER_03 | - | - |
+| SPEAKER_04 | - | - |
+| SPEAKER_05 | - | - |
 
 
 ### 🎭 Roles
 
-- **Organizer:** Zoe*
+- **Organizer:** SPEAKER_00*
 - **Decision Makers:** Household group*
 
 ---
@@ -201,8 +189,8 @@ Confirm and implement kitchen cupboard reorganization, ensuring accessibility an
 <div align="center">
 
 📊 **Meeting Snapshot**
-✅ 5 Action Items · ✔️ 4 Decisions · ⚠️ 4 Open Issues · 🛡️ 3 Risks
+✅ 5 Action Items · ✔️ 3 Decisions · ⚠️ 4 Open Issues · 🛡️ 3 Risks
 
 </div>
 
-# 
+ 
