@@ -93,6 +93,3 @@ This lesson focuses on the importance of recognizing and changing personal biase
 🔑 5 Highlights · 📖 3 Concepts
 
 </div>
-
-
-# # # 
