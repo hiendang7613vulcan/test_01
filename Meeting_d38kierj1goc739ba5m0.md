@@ -1,9 +1,9 @@
 
-# 📝 Leading Change: Digitalization of Patient Records in Northern Ireland Mental Health Services
+# 📝 Implementation of Encompass Electronic Patient Record System in Mental Health Services
 
-> **Type:** Experience Sharing / Leadership Interview
+> **Type:** Change Management Experience Sharing
 
-> **Purpose:** To discuss and provide an example of leading organizational change, specifically the transition to a centralized digital patient record system.
+> **Purpose:** To share an example of leading organizational change, specifically the digitization of patient records in Northern Ireland's mental health services.
 
 ---
 
@@ -12,18 +12,17 @@
 > Summary of the entire meeting for those who didn't attend.
 
 **Overview**
-Speaker A described their experience leading the transition from legacy patient record systems to a centralized digital system (Encompass) within Northern Ireland's mental health services. The discussion covered the challenges of preparing teams for change, establishing oversight and operational readiness groups, and strategies for staff engagement and training.
+Speaker A described their experience leading the transition from legacy patient record systems to the new centralized Encompass system in Northern Ireland's mental health services. The discussion covered the challenges of preparing for the change, strategies for stakeholder engagement, and the development of operational readiness processes that were later adopted trust-wide.
 
 ### 🔹 Key Discussion Points
 
-- Northern Ireland decided to digitalize patient records, requiring migration from legacy systems to Encompass.
-- Speaker A, as performance manager, led the readiness efforts for mental health services, being the first trust to go live.
-- Initial confusion and lack of clarity about Encompass required proactive leadership and coordination.
-- Speaker A established an oversight group, mapped stakeholder roles, and created a focused agenda for operational readiness.
-- The model developed was later adopted trust-wide for broader operational readiness.
-- Key focus areas included staff training, policy/procedure impacts, device needs, and embedding change in daily operations.
-- Champions (super users) were identified in each team to support the transition.
-- Change management required compassion, tailored communication, and addressing resistance.
+- Northern Ireland decided to digitize patient records, requiring a move to the Encompass system.
+- Speaker A, as Performance Manager, was responsible for preparing mental health services for the transition.
+- Initial confusion and lack of clarity about Encompass among staff.
+- Speaker A established an oversight group and coordinated with stakeholders to clarify roles and responsibilities.
+- Developed an agenda focused on operational readiness, staff training, and policy impacts.
+- The readiness model was adopted across the trust, leading to the formation of operational readiness groups.
+- Efforts included identifying team champions (super users), ensuring staff training, and addressing resistance to change.
 
 ---
 
@@ -33,8 +32,9 @@ Speaker A described their experience leading the transition from legacy patient 
 
 | Status | Priority | Task | Assignee | Due Date |
 |--------|----------|------|----------|----------|
-| ✅ Done | P0 | Identify and appoint champions (super users) in each team to support Encompass implementation. | Speaker A* | - |
-| ✅ Done | P1 | Coordinate with stakeholders to map roles and disseminate information about Encompass. | Speaker A* | - |
+| ✅ Done | P0 | Coordinate with stakeholders to clarify roles and responsibilities for Encompass implementation. | Performance Manager* | - |
+| ✅ Done | P0 | Develop and disseminate an agenda for operational readiness, including staff training and policy review. | Performance Manager* | - |
+| ✅ Done | P1 | Identify and train team champions (super users) for Encompass within each team. | Performance Manager* | - |
 
 ---
 
@@ -45,13 +45,13 @@ Speaker A described their experience leading the transition from legacy patient 
 ### ✔️ Decision 1
 
 **Statement**
-Adopt an operational readiness group model with a bespoke agenda for Encompass implementation.
+Adopt an operational readiness group model for Encompass implementation, starting with mental health services and expanding trust-wide.
 
-**Scope**: Mental Health Services (later adopted trust-wide)
-**Owner**: Speaker A*
+**Scope**: Mental Health Services and subsequently the entire trust
+**Owner**: Performance Manager*
 
 **Rationale**
-> To ensure structured preparation, stakeholder engagement, and effective transition to the new digital system.
+> The model provided structure, clarity, and effective stakeholder engagement, which facilitated readiness for the new system.
 
 ---
 
@@ -62,10 +62,10 @@ Adopt an operational readiness group model with a bespoke agenda for Encompass i
 ### ⚠️ Issue 1
 
 **Issue**
-Monitor ongoing staff adaptation and address resistance to the new digital system.
+Ongoing need to address staff resistance and ensure continued engagement with the Encompass system.
 
-- **Owner:** Speaker A*
-- **Blocking Factor:** Change resistance and uncertainty among staff.
+- **Owner:** Performance Manager*
+- **Blocking Factor:** Change resistance among staff and uncertainty about system benefits.
 
 ---
 
@@ -75,7 +75,7 @@ Monitor ongoing staff adaptation and address resistance to the new digital syste
 
 | # | Risk | Impact | Likelihood | Mitigation |
 |---|------|--------|------------|------------|
-| 1 | Staff resistance to change and uncertainty about the benefits of the new system may hinder successful adoption. | high | medium | Applied compassionate change management, tailored communication, and identified champions to support teams. |
+| 1 | Staff resistance to the new Encompass system could hinder successful adoption and operational effectiveness. | high | medium | Engage staff through meetings, supervision, and targeted communication to address concerns and highlight benefits. |
 
 ---
 
@@ -83,8 +83,8 @@ Monitor ongoing staff adaptation and address resistance to the new digital syste
 
 **📋 Suggested Agenda**
 
-- Review staff adaptation and feedback on Encompass implementation.
-- Address ongoing training needs and policy updates.
+- Review progress on staff engagement and training for Encompass.
+- Discuss strategies to further reduce resistance to change.
 
 ---
 
@@ -94,21 +94,21 @@ Monitor ongoing staff adaptation and address resistance to the new digital syste
 
 | Name | Role | Team |
 |------|------|------|
-| Speaker A | Performance Manager* | Mental Health Services* |
+| Speaker A | Performance Manager | Mental Health Services |
 
 
 ### 🎭 Roles
 
 - **Organizer:** Speaker A
-- **Decision Makers:** Speaker A*
+- **Decision Makers:** Speaker A
 
 ---
 
 <div align="center">
 
 📊 **Meeting Snapshot**
-✅ 2 Action Items · ✔️ 1 Decisions · ⚠️ 1 Open Issues · 🛡️ 1 Risks
+✅ 3 Action Items · ✔️ 1 Decisions · ⚠️ 1 Open Issues · 🛡️ 1 Risks
 
 </div>
 
-# 
+ 
