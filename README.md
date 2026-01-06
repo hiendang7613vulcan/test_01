@@ -1,4 +1,3 @@
-zxfs dfsd f [^1]
+Here is a statement that requires a citation[^1].
 
-[^1] sdf sdf
-
+[^1]: My reference, with further explanation and a [supporting link](https://example.com).
