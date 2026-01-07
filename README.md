@@ -11,12 +11,14 @@
 ### 2. Current Market Segments
 - **Secondary Market (District 1)**: Average price is VND413 million/sqm, the highest in the city.
 - **New Units**: Prices range from VND200 million to VND500 million/sqm, with annual increases of 10-30%.
+  
 | Market Segment         | 2015 Price (VND/sqm) | 2025 Price (VND/sqm) | Annual Growth Rate |
 |-----------------------|---------------------:|---------------------:|:------------------:|
 | Apartments (avg)      |           31,000,000 |           92,000,000 |     ~10-30%        |
 | Land                  |           N/A        |         4.8x higher  |     N/A            |
 | District 1 (secondary)|           N/A        |         413,000,000  |     N/A            |
 | New Units             |           N/A        | 200-500,000,000      |     10-30%         |
+
 ## 🏗️ Causes of Price Increases
 ### 1. Demand and Supply Dynamics
 - **Undersupply**: Limited new inventory and slow project launches.
