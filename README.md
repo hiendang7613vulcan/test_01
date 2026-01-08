@@ -1,3 +1,4 @@
+
 ## :world_map: Overview
 - Youth violence and weapon carrying have reached critical levels in Britain, with teenagers describing a daily reality of fear, self-defense, and normalized aggression. The documentary provides direct testimony from young people across several UK cities, highlighting the scale, causes, and consequences of this crisis.<refs><ref start="5" end="35"/><ref start="49" end="58"/><ref start="192" end="205"/><ref start="1019" end="1187"/></refs>
 ## :chart_with_upwards_trend: The Scale and Nature of Youth Violence
@@ -6,12 +7,16 @@
 - Across the UK, a violent crime is reported every 30 seconds. Manchester and London are hotspots, with Manchester averaging six knife attacks per day.<refs><ref start="200" end="205"/><ref start="724" end="726"/></refs>
 - In the last year, 10,000 knife crimes were reported in London, and more than 10 people a day were arrested for possession of a sharp instrument.<refs><ref start="1019" end="1022"/></refs>
 **Key Statistics**
-| City         | Violent Crimes (Year) | Knife Crimes (Year) | Youth Deaths (Year) |
-|--------------|----------------------|---------------------|---------------------|
-| London       | 218,000              | 10,000+             | 32+                 |
-| Manchester   | N/A                  | 6/day               | N/A                 |
-| Bradford     | 10,000+              | N/A                 | N/A                 |
-| UK (total)   | 1 every 30 seconds   | N/A                 | 59 (last year)      |
+
+
+| City | Violent Crimes (Year) | Knife Crimes (Year) | Youth Deaths (Year) |
+| -------------- | ---------------------- | --------------------- | --------------------- |
+| London | 218,000 | 10,000+ | 32+ |
+| Manchester | N/A | 6/day | N/A |
+| Bradford | 10,000+ | N/A | N/A |
+| UK (total) | 1 every 30 seconds | N/A | 59 (last year) |
+
+
 **Weapon Types and Access**
 - Knives are the most common weapon, easily obtained from home kitchens, hardware stores, or even online. Guns, hammers, and improvised weapons are also prevalent. Age restrictions are easily bypassed, and weapons can be bought for as little as £10.<refs><ref start="12" end="15"/><ref start="217" end="231"/><ref start="1030" end="1034"/></refs>
 ## :singer: Youth Perspectives and Lived Experiences
