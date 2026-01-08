@@ -1,5 +1,5 @@
 ## 🏛️ Overview
-Alexander the Great, who reigned for 13 years, is one of history's most influential figures. His legacy is the subject of ongoing debate: was he a visionary leader who transformed the world, or a ruthless conqueror driven by ambition? This summary examines both perspectives, drawing on his achievements and the controversies surrounding his rule. <item_type id="item_id" start="start_seg" end="end_seg"/> <refs><ref start="1" end="3"/></refs>
+Alexander the Great, who reigned for 13 years, is one of history's most influential figures. His legacy is the subject of ongoing debate: was he a visionary leader who transformed the world, or a ruthless conqueror driven by ambition? This summary examines both perspectives, drawing on his achievements and the controversies surrounding his rule. <ref type="item_type" id="item_id" start="start_seg" end="end_seg"/> <refs><ref start="1" end="3"/></refs>
 
 ## ⚔️ Alexander's Achievements
 ### 1. Conquest of Persia
